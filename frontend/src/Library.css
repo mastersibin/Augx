@@ -1,0 +1,14 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  max-height: 1600px;
+  max-width: 100%;
+  background-color: #eee;
+  /* overflow-x: hidden; */
+
+  position: relative;
+}
