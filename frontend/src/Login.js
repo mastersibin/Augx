@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const [currentView, setCurrentView] = useState("logIn");
   const navigate = useNavigate();
-
   const changeView = (view) => {
     setCurrentView(view);
   };

@@ -19,7 +19,7 @@ function Library(props) {
 
   useEffect(() => {
     fetchMethod();
-    let x = setInterval(fetchMethod, 5000);
+    let x = setInterval(fetchMethod, process.env.REACT_APP_DEBOUNCE_INTERVAL);
     // setIntervalId(x)
     // return () => {
     //     clearInterval(intervalId)

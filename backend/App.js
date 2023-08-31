@@ -54,7 +54,7 @@ const authorization = (req, res, next) => {
     return res.sendStatus(403);
   }
   try {
-    const data = jwt.verify(token, "YOUR_SECRET_KEY");
+    const data = jwt.verify(token, "SDF#@#DDFS#%%%!22312312");
 
     if (
       userData.has(data.username) &&
@@ -85,7 +85,7 @@ app.post("/register", (req, res) => {
 app.post("/login", (req, res) => {
   const token = jwt.sign(
     { username: req.body.username, password: req.body.password },
-    "YOUR_SECRET_KEY"
+    "SDF#@#DDFS#%%%!22312312"
   );
   return res
     .cookie("access_token", token, {
